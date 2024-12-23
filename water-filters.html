@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Water Filters | Royal Agencies</title>
+    <link rel="stylesheet" href="/css/water-filters.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/whatsapp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<!-- Navbar -->
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">Royal Agencies</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+    </div>
+</header><br><br><br>
+<body>
+
+    <a href="https://wa.me/+919921913303" target="_blank" class="fixed-image">
+        <img src="image/WhatsApp_icon.png" alt="Redirect Image">
+      </a>
+
+        <!-- Filter and Products Section -->
+        <section id="products-section">
+            <!-- Filter Options -->
+            <div class="filter-container">
+                <label for="filter-type">Filter by Type:</label>
+                <select id="filter-type" onchange="filterProducts()">
+                    <option value="all">All</option>
+                    <option value="commercial">Commercial Filters</option>
+                    <option value="industrial">Industrial Filters</option>
+                    <option value="cooler">Water Coolers</option>
+                    <option value="softener">Water Softeners</option>
+                </select>
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search for products..." onkeyup="searchProducts()">
+                        <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>            
+            </div>
+    
+            <!-- Product Cards -->
+            <div class="product-grid">
+                <!-- Sample Product Card Structure -->
+                <div class="product-card" data-type="commercial">
+                    <img src="image/water-filters20.png" alt="Commercial Filter">
+                    <p>Supreme Cloud Strom Ro Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal20">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters21.png" alt="Commercial Filter">
+                    <p>Purella ALLURE</p>
+                    <button class="read-more-button" data-modal="modal21">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters23.png" alt="Commercial Filter">
+                    <p>Purella ORTHO</p>
+                    <button class="read-more-button" data-modal="modal23">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="image/water-filters1.jpg" alt="Commercial Filter">
+                    <p>KENT Grand RO Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal1">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters2.jpg" alt="Commercial Filter">
+                    <p>KENT Supreme Plus RO Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal2">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters3.jpg" alt="Commercial Filter">
+                    <p>KENT Grand Star RO Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal3">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters4.jpg" alt="Commercial Filter">
+                    <p>KENT Excel Plus RO Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal4">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters5.jpg" alt="Commercial Filter">
+                    <p>Aquaguard Delight NXT RO + UV + UF + MC Aquasaver Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal5">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters6.jpg" alt="Commercial Filter">
+                    <p>Aquaguard Marvel NXT RO + UV + UF Taste Adjuster Copper Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal6">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters7.jpg" alt="Commercial Filter">
+                    <p>Aquaguard Aura 2X Life RO + UV with Taste Adjuster Copper Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal7">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters8.jpg" alt="Commercial Filter">
+                    <p>Aquaguard Ritz RO + UV Taste Adjuster Stainless Steel Copper Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal8">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters9.webp" alt="Commercial Filter">
+                    <p>Havells Siphon Alkaline 100 % RO & UV Technology</p>
+                    <button class="read-more-button" data-modal="modal9">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters10.webp" alt="Commercial Filter">
+                    <p>Havells FAB UTC Alkaline 100 % RO & UV Technology</p>
+                    <button class="read-more-button" data-modal="modal10">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters11.webp" alt="Commercial Filter">
+                    <p>Havells Gracia Alkaline 100 % RO & UV purified alkaline water</p>
+                    <button class="read-more-button" data-modal="modal11">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters12.webp" alt="Commercial Filter">
+                    <p>Havells Delite Alkaline Plus 100 % RO & UV purified alkaline water</p>
+                    <button class="read-more-button" data-modal="modal12">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters13.jpg" alt="Commercial Filter">
+                    <p>Livpure Pep pro grand (RO + UV + Mineraliser) Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal13">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters14.jpg" alt="Commercial Filter">
+                    <p>Livpure Bolt Copper (RO + UV + Mineraliser) Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal14">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters15.webp" alt="Commercial Filter">
+                    <p>Livpure Zinger Copper (Hot RO + UV + UF + Taste Enhancer) Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal15">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters16.jpg" alt="Commercial Filter">
+                    <p>Livpure Stealth Under Sink (RO + UV + Copper) Water Purifier</p>
+                    <button class="read-more-button" data-modal="modal16">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters30.jpg" alt="Commercial Filter">
+                    <p>Aqua Glory</p>
+                    <button class="read-more-button" data-modal="modal30">Read More</button>
+                </div>
+                <div class="product-card" data-type="industrial">
+                    <img src="/image/water-filters17.png" alt="Industrial Filter">
+                    <p>Industrial water filter 50 LPH</p>
+                    <button class="read-more-button" data-modal="modal17">Read More</button>
+                </div>
+                <div class="product-card" data-type="industrial">
+                    <img src="/image/water-filters18.jpg" alt="Industrial Filter">
+                    <p>Industrial water filter 500 LPH</p>
+                    <button class="read-more-button" data-modal="modal18">Read More</button>
+                </div>
+                <div class="product-card" data-type="industrial">
+                    <img src="/image/water-filters19.jpg" alt="Industrial Filter">
+                    <p>Industrial water filter 1000 LPH</p>
+                    <button class="read-more-button" data-modal="modal19">Read More</button>
+                </div>
+                <div class="product-card" data-type="commercial">
+                    <img src="/image/water-filters22.jpeg" alt="Commercial Filter">
+                    <p>Purella Supra+</p>
+                    <button class="read-more-button" data-modal="modal22">Read More</button>
+                </div>
+                <div class="product-card" data-type="industrial">
+                    <img src="/image/water-filters24.jpg" alt="Industrial Filter">
+                    <p>Industrial water filter 100 LPH</p>
+                    <button class="read-more-button" data-modal="modal24">Read More</button>
+                </div>
+                <div class="product-card" data-type="cooler">
+                    <img src="/image/water-filters25.jpeg" alt="Water Cooler">
+                    <p>Touchless Water Cooler</p>
+                    <button class="read-more-button" data-modal="modal25">Read More</button>
+                </div>
+                <div class="product-card" data-type="cooler">
+                    <img src="/image/water-filters26.jpeg" alt="Water Cooler">
+                    <p>Water Cooler</p>
+                    <button class="read-more-button" data-modal="modal26">Read More</button>
+                </div>
+                <div class="product-card" data-type="cooler">
+                    <img src="/image/water-filters27.png" alt="Water Cooler">
+                    <p>Storage Water Cooler - Warm & Cold</p>
+                    <button class="read-more-button" data-modal="modal27">Read More</button>
+                </div>
+                <div class="product-card" data-type="cooler">
+                    <img src="/image/water-filters28.jpeg" alt="Water Cooler">
+                    <p>Water Coolers with inbuilt UV Purification</p>
+                    <button class="read-more-button" data-modal="modal28">Read More</button>
+                </div>
+                <div class="product-card" data-type="cooler">
+                    <img src="/image/water-filters29.jpeg" alt="Water Cooler">
+                    <p>Water Coolers with inbuilt RO Purification</p>
+                    <button class="read-more-button" data-modal="modal29">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters31.webp" alt="Water Softener">
+                    <p>ORG Automatic Shower Softener</p>
+                    <button class="read-more-button" data-modal="modal31">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters32.webp" alt="Water Softener">
+                    <p>ORG Water Softener OS - 10A / 10C</p>
+                    <button class="read-more-button" data-modal="modal32">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters33.webp" alt="Water Softener">
+                    <p>ORG Softener Mini</p>
+                    <button class="read-more-button" data-modal="modal33">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters34.webp" alt="Water Softener">
+                    <p>Double Tank Shower Softener</p>
+                    <button class="read-more-button" data-modal="modal34">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters35.webp" alt="Water Softener">
+                    <p>ORG Automatic Water Softener OS - 20 AD</p>
+                    <button class="read-more-button" data-modal="modal35">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters36.webp" alt="Water Softener">
+                    <p>ORG Automatic Water Softener OS - 45 AD</p>
+                    <button class="read-more-button" data-modal="modal36">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters37.webp" alt="Water Softener">
+                    <p>ORG Bungalow Softener C1044 BFT</p>
+                    <button class="read-more-button" data-modal="modal37">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters44.webp" alt="Water Softener">
+                    <p>	ORG Water Softener 100R</p>
+                    <button class="read-more-button" data-modal="modal44">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters45.webp" alt="Water Softener">
+                    <p>	ORG Water Softener 150R</p>
+                    <button class="read-more-button" data-modal="modal45">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters46.webp" alt="Water Softener">
+                    <p>	ORG Water Softener 200R</p>
+                    <button class="read-more-button" data-modal="modal46">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters47.webp" alt="Water Softener">
+                    <p>	ORG Water Softener 300R</p>
+                    <button class="read-more-button" data-modal="modal47">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters38.webp" alt="Water Softener">
+                    <p>ORG Water Softener 500R</p>
+                    <button class="read-more-button" data-modal="modal38">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters39.webp" alt="Water Softener">
+                    <p>ORG Water Softener 700R</p>
+                    <button class="read-more-button" data-modal="modal39">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters40.webp" alt="Water Softener">
+                    <p>ORG Water Softener 1000R</p>
+                    <button class="read-more-button" data-modal="modal40">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters41.webp" alt="Water Softener">
+                    <p>ORG Water Softener 1500R</p>
+                    <button class="read-more-button" data-modal="modal41">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters42.webp" alt="Water Softener">
+                    <p>ORG Water Softener 2000R</p>
+                    <button class="read-more-button" data-modal="modal42">Read More</button>
+                </div>
+                <div class="product-card" data-type="softener">
+                    <img src="/image/water-filters43.webp" alt="Water Softener">
+                    <p>	Salt tablets / Water softening salt</p>
+                    <button class="read-more-button" data-modal="modal43">Read More</button>
+                </div>
+                <!-- Add additional cards in similar structure -->
+            </div>
+        </section>
+
+    <!-- Modal structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal1">&times;</span>
+            <div class="modal-body">
+                <img src="image/water-filters1.jpg" alt="water-filters1" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Multiple purification by RO + UF + TDS Control process which removes even dissolved impurities such as arsenic, rust, pesticides & fluorides, and kills bacteria & viruses to make water 100% pure and suitable for drinking.</li>
+                    <li>TDS control system allows adjustment of tds level of purified water which retains essential natural minerals in drinking water.</li>
+                    <li>Wall-mountable design to be suited for domestic purposes.</li>
+                    <li>Country of Origin - India.</li>
+                    <li>Water level indicator to keep a track of purified water in the storage tank.</li>
+                    <li>20 litres per hour purification capacity, 8 litres storage capacity.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal2">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters2.jpg" alt="water-filters2" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Multiple purification by RO + UV + UF + TDS Control which removes even dissolved impurities such as chemicals, bacteria, viruses, and salts making water 100% pure and suitable for consumption. The in-tank UV LED keeps purified water pure for longer duration.</li>
+                    <li>Zero Water Wastage which ensures that no drop of water is wasted during the purification process. This is achieved by re-circulating the reject water to overhead tank using its own water pump.</li>
+                    <li>TDS control system allows adjustment of TDS level of purified water which retains essential natural minerals in drinking water.</li>
+                    <li>Country of Origin: India.</li>
+                    <li>Suitable for purification of brackish / tap water / municipal water supply. Capacity: 8 litres, high purification capacity of 20 litres per hour.</li>
+                    <li>Wall mounted design - best suited for domestic purpose. Compact Design which needs lesser space for installation.</li>
+                    <li>Fully automatic operation with auto-on and auto-off function, ensuring that you do not run out of pure water. Computer controlled operation for enhanced purity and long life of the product.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal3">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters3.jpg" alt="water-filters3" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>The multistage purification process makes water 100 percent pure and safe for consumption.</li>
+                    <li>The smart RO purifier has a digital display of purity for the convenience of the users, the digital display feature informs the users about the filter life, RO flow rate, and purified water quality.</li>
+                    <li>Kent grand star is India's first RO water purifier with an in-tank UV disinfection feature, this ensures that the water in the storage tank is purified and safe for consumption.</li>
+                    <li>The water purifier has a high storage capacity which ensures continuous supply of water even in the absence of electricity.</li>
+                    <li>Conventional RO purifiers reject almost 80 percent of the water and retain only 20 percent as purified.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal4">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters4.jpg" alt="water-filters4" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>KENT Excell+ 7-litres Under the counter RO + UV/UF + TDS Controller (White) 15-Ltr/hr Water Purifier.</li>
+                    <li>White, 7-Litres tank, Power Consumption- 60W; Input Water Temperature-10-35 C; Booster Pump Voltage- 24 V DC; Tank Material: Food Grade Plastic.</li>
+                    <li>Can be used for TDS (500-2500). Please use a TDS meter to find out the correct TDS of your water source before buying a water purifier.</li>
+                    <li>Product Dimensions: 390 cms (Length) X 200 cms (Width) X 520 cms (Height)</li>
+                    <li>Includes: Water Purifier, Installation kit and User manual.</li>
+                    <li>Technology: RO + UV + UF + TDS Mineralizer water purification.</li>
+                    <li>Purification Capacity: 15 Litres Per Hour.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal5">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters5.jpg" alt="water-filters5" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Aquasaver - Enables up to 60% water savings vs regular RO water purifiers</li>
+                    <li>Superior 9-Stage Purification including RO + UV + UF - Offers 99.9999% bacteria reduction, 99.99% virus reduction, 30x better dust and dirt removal than local purifiers, and 10x more chemical protection. a] RO Maxx: Removes contaminants like lead, mercury, microplastics, and pesticides, eliminating disease-causing viruses and bacteria, b] UV e-boiling: Ensures that each drop of water is as pure and healthy as water boiled for 20+ minutes, c] Ultra Filtration: Makes your water crystal clear by removing ultra-fine suspended particles.</li>
+                    <li>Taste Adjuster - Adjusts the taste of water as per the source.</li>
+                    <li>2-in-1 Mineral Charge- Infuses purified water with essential micronutrients like calcium & magnesium that enhance the taste and quality for consumption.</li>
+                    <li>Works With All Water Sources- Purifies water from any source, including municipal, borewell, or tanker water, ensuring safe and clean drinking water every time.</li>
+                    <li>Long Cartridge Life - A cartridge lasts up to 1 year or 6000 litres, delivering consistent performance based on standard test conditions.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal6">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters6.jpg" alt="water-filters6" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+                <ul>
+                    <li>3 -in-1 Patented Active Copper Technology- Infuses the right amount of copper from the first drop (As per BIS norms). Comes with clean free technology. Suitable for all age groups.</li>
+                    <li>Water Saving RO Technology- Advanced water savings technology that helps to save up to 60% water vs regular RO water purifiers.</li>
+                    <li>Taste Adjuster- Adjusts the taste of water to get sweet-tasting water always.</li>
+                    <li>Superior 10 - Stage Purification including RO + UV + UF - Offers 99.9999% bacteria reduction, 99.99% virus reduction, 30x better dust and dirt removal than local purifiers, and 10x more chemical protection. a] RO Maxx: Removes contaminants like lead, mercury, microplastics, and pesticides, eliminating disease-causing viruses and bacteria, b] UV e-boiling: Ensures that each drop of water is as pure and healthy as water boiled for 20+ minutes, c] Ultra Filtration: Removes ultra-fine suspended particles.</li>
+                    <li>Smart Service Alerts - Stay informed with alerts for service, tank-full indicators, filter life warnings, and electronic errors.</li>
+                </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal7">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters7.jpg" alt="water-filters7" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Patented Active Copper Technology: The Active Copper booster cartridge infuses the right amount of copper ions into the water. Copper is known to boost the immune system and enhance the taste of water.</li>
+                <li>Patented Mineral Guard Technology- This helps to retain all the essential natural minerals such as Calcium and Magnesium, thereby providing the perfect blend of safe and healthy water.</li>
+                <li>Water Suitability- This product is suitable for water from all sources (tanker/ borewell/ municipal water). This purifier can be used for TDS up to 2000 PPM (use a TDS meter to find out the correct TDS of your water source before buying a water purifier).</li>
+                <li>High Storage Capacity- 7L capacity storage tank.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal8">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters8.jpg" alt="water-filters8" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Product Technology- RO + UV + MTDS with 8 stages of purification. RO Membrane removes contaminants like lead and mercury and eliminates disease-causing viruses and bacteria. UV e-boiling delivers water that is as safe and pure as water boiled for over 20 minutes. Taste Adjuster (MTDS) provides sweet tasting water by adjustment of taste depending upon the source of water.</li>
+                <li>Patented Active Copper + Zinc Booster Technology: The Active Copper + Zinc booster cartridge infuses the right amount of Copper and Zinc ions into the water. Copper and Zinc are known to boost the immune system and enhance the taste of water.</li>
+                <li>Patented Mineral Guard Technology- This helps to retain all the essential natural minerals such as Calcium and Magnesium, thereby providing the perfect blend of safe and healthy water.</li>
+                <li>Stainless Steel Tank- It is equipped with a storage tank made of high grade 304 stainless steel that is corrosion-free, tough and durable.</li>
+                <li>Up To 60% Water Savings- Other ordinary water purifiers end up wasting 50-75% water, but Aquaguard water purifiers with superior technology purify water and regulate its taste to save up to 60% water.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal9">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters9.webp" alt="water-filters9" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>THE PURIFICATION PROCESS: 1] MEMBRANE PERFORMANCE ENHANCER; 2] SEDIMENT CARTRIDGE; 3] ACTIVATED CARBON CARTRIDGE; 4] REVERES OSMOSIS MEMBRANE; 5] GERMICIDAL UV PLUS; 6] BACTERIOSTATIC ALKALINE; 7] TASTE ENHANCER CARTRIDGE.</li>
+                <li>FUNCTIONS OF SMART INDICATORS: 1] SELF-DIAGNOSTIC MODE; 2] PURIFICATION PROCESS INDICATOR; 3] TANK FULL INDICATOR; 4] FILTER LIFE; 5] ERROR INDICATION.</li>
+                <li>DOUBLE PROTECTION: A] Absolute Safety through 100% RO Purified Water: 100% Water passes through the RO Membrane to ensure absolutely safe and pure drinking water; B] Purification through Germicidal UV LAMP: An optimum exposure of water to UV-C radiation makes water free from microbiological threats like pathogenic bacteria & viruses.</li>
+                <li>BACTERIOSTATIC ALKALINE & TASTE ENHANCER CARTRIDGE: It enhance the pH of purified water by adding back wide spectrum of natural minerals & trace elements such as Calcium, Magnesium, Potassium, Sodium, Copper, Zinc, etc. It lowers the Oxidation Reduction Potential (ORP) resulting into anti-oxidant nature of water, transforms regular water into Alkaline Water, It also removes organic residues and VOC, which enhances the taste of purified water and results in healthier water.</li>
+                <li>CONTEMPORARY DESIGN & AESTHETICS: Futuristic design, superior dual tone colour finish, compact design and functional display panel, compliment your kitchen décor.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal10">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters10.webp" alt="water-filters10" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>THE PURIFICATION PROCESS: 1] MEMBRANE PERFORMANCE ENHANCER; 2] SEDIMENT CARTRIDGE; 3] ACTIVATED CARBON CARTRIDGE; 4] REVERES OSMOSIS MEMBRANE; 5] GERMICIDAL UV PLUS; 6] BACTERIOSTATIC ALKALINE; 7] TASTE ENHANCER CARTRIDGE.</li>
+                <li>FUNCTIONS OF SMART INDICATORS: 1] SELF-DIAGNOSTIC MODE; 2] PURIFICATION PROCESS INDICATOR; 3] TANK FULL INDICATOR; 4] FILTER LIFE; 5] ERROR INDICATION.</li>
+                <li>CONTEMPORARY DESIGN & AESTHETICS: Futuristic design, superior dual tone colour finish, compact design and functional display panel, compliment your kitchen décor.</li>
+                <li>MEMBRANE PERFORMANCE ENHANCER: It prevents scaling formation on RO Membrane due to hardness in feed water, which results in improved performance and enhances the life of RO membrane.</li>
+                <li>CARTRIDGE LIFE INDICATOR: Monitors and displays the filter life expectancy to help you plan comprehensive maintenance in advance. INGRESS PROTECTION TANK COVER: Stops external invasion of insects and dust particles.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal2">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters11.webp" alt="water-filters11" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>RO + UV Purified Alkaline Water Purifier.</li>
+                <li>Colour: Silver & Black.</li>
+                <li>8 stages of 100% RO & UV purification delivers alkaline water with pH 8 to pH 10 Revitalizer restructures water molecules for improved hydration, and mineral absorption.</li>
+                <li>Hot | warm | ambient water, complete touch display & dispensing, child lock protection from hot water, LED colour temperature guide, i-Protect purification monitoring that cuts off water if it is no longer safe to drink.</li>
+                <li>UV LED lamp in tank given purified water all time. other features include maintenance and error alert, process indicator, digital clock, and zero splash hygienic water dispensing.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal12">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters12.webp" alt="water-filters12" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Consumer safety: iProtect purification constantly monitors purification process; ensures safe water or no water and Electrical protection system protects unit from voltage spikes.</li>
+                    <li>100% water passes through the RO membrane and then UV purification to ensure absolute safe and pure drinking water full protection from viruses, bacteria and chemical impurities.</li>
+                    <li>Membrane Performance Enhancer prevents scale formation on RO membrane and improves its performance & life.</li>
+                    <li>Revitalizer- magnetizes and restructures water molecules - makes it biologically active to improve hydration & mineral absorption.</li>
+                    <li>It Delivers pH balanced water by adding essential alkaline minerals and trace elements such as Calcium, Magnesium, Potassium, Sodium, Copper, Zinc etc, helps to strengthen immunity.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal13" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal13">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters13.jpg" alt="water-filters13" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Smart TDS and Water Saving Technology: Smart TDS technology (taste enhancer) enhances taste and provides purified & healthy water for input water TDS upto 2000 ppm.</li>
+                    <li>Multi - Stage Purification: The process of purification goes through multi stages: Super Sediment Filter, Carbon Block Filter, Anti-scalant Cartridge, RO Membrane, Mineral Cartridge, Taste Enhancer, In tank UV Sterilization at every hour.</li>
+                    <li>In Tank UV sterilization: In Tank UV keeps stored water absolutely safe for drinking for longer duration by UV sterilization for 15 mins at every hour which means even if you are on a short vacation you don't need to empty the storage tank and can have clean and safe water when you come back.</li>
+                    <li>Mineraliser: Mineraliser in the purification system ensures right level of essential minerals in water like magnesium, potassium etc. Magnesium boosts exercise performance, maintains healthy blood sugar levels, promotes bone health, and supports better sleep.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal14" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal14">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters14.jpg" alt="water-filters14" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Multiple purification by RO + UV + UF + TDS Control which removes even dissolved impurities such as chemicals, bacteria, viruses, and salts making water 100% pure and suitable for consumption. The in-tank UV LED keeps purified water pure for longer duration.</li>
+                    <li>Zero Water Wastage which ensures that no drop of water is wasted during the purification process. This is achieved by re-circulating the reject water to overhead tank using its own water pump.</li>                    <li>Country of Origin: India.</li>
+                    <li>Suitable for purification of brackish / tap water / municipal water supply. Capacity: 8 litres, high purification capacity of 20 litres per hour.</li>
+                    <li>Wall mounted design - best suited for domestic purpose. Compact Design which needs lesser space for installation.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal15" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal15">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters15.webp" alt="water-filter15" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Instant Hot Drinking Water with Water Saving: Enjoy instant access to hot, warm, and ambient water while conserving up to 20,000 litres of water annually. Smart TDS technology ensures great taste and healthy water, even with input water TDS levels up to 2000 ppm.</li>
+                <li>Multi-Stage Purification with Interactive LED Touch Display: Purification process involves multiple stages, including Super Sediment Filter, Carbon Block Filter, RO Membrane, Copper Filter, Ultra Filtration, Taste Enhancer, and In-tank UV Sterilization every hour. The interactive LED Touch Display offers convenience and clarity in operation.</li>
+                <li>In-tank UV sterilization keeps stored water safe for longer durations by sterilizing for 15 minutes every hour. Even during short vacations, the storage tank remains full of clean and safe water. Ultra Filtration ensures water disinfection by removing bacteria and viruses while retaining beneficial minerals for pure and safe water consumption. - Copper-Infused Water: Enjoy the benefits of copper-infused water, known to boost immunity, aid weight loss, and improve digestion.</li>
+                <li>Livpure Smart App Features: Access round-the-clock tracking of water consumption, purifier recharging, and service requests. Monitor filter health, stay connected with support, and enjoy easy recharging for a seamless user experience.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal16" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal16">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters16.jpg" alt="water-filters16" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>6 Stage Advanced Purification: Advanced filtration is designed to ensure the highest quality of purified water. Each stage is to remove impurities and contaminants, providing you with clean and fresh drinking water.</li>
+                <li>Super Sediment Filter: The super sediment filter effectively traps and removes even the smallest particles and sediments from your water, ensuring that it is free from impurities and remains healthy for you and your loved ones.</li>
+                <li>Fits Seamlessly with Your Modern Modular Kitchen Decor: With it’s under the counter placement & sleek, compact design blends in with your modern modular kitchen decor</li>
+                <li>7L Storage Capacity: With a generous 7-liter storage capacity, you'll have an ample supply of purified water available whenever you need it. Say goodbye to the hassle of frequent refills.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal17" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal17">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters17.png" alt="water-filters17" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Fully automatic shut off function which automatically switched off the Machin when its water tanks get full || Purification Technology: RO; Type: Electrical; Purification Stage: Stage 1: 5 microns inline PP filter || Stage 2: Granule Active Carbon Filter ||Stage 3: Block Active Carbon Filter || Stage 4: RO Membrane ||Stage 5: Post UV Filtration</li>
+                <li>Best RO water purifier for Domestic and Commercial use with TDS Adjuster (that helps to adjust the taste of water as per the source)</li>
+                <li>Purification Capacity: 50 Liter Per Hour,2 pcs 150 Gpd Booster Pump, 4 pcs membrane</li>
+                <li>RO Water Purifier System Which runs upto 3000 TDS level of Input Water from Both Groundwater and Municipal Supply</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal18" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal18">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters18.jpg" alt="water-filters18" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Heavy Duty System can be operated up to 10 hours without any break</li>
+                    <li>Fully Automatic. General Maintenance not required. Easy to operate (Plug and Play system)</li>
+                    <li>MOC (Material of Construction) – Stainless steel</li>
+                    <li>Water Recovery rate is 70%, Inlet TDS – Up to 1500 ppm. Design on the principle of Reverse Osmosis.</li>
+                    <li>Low Noise, Low Power Losses & Low Water Rejection Rate. Designed for continued operations for maximum efficiency utilization. All RO plants with Industrial standard capacities.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal19" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal19">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters19.jpg" alt="water-filters19" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>The 1000 LPH RO Plant comes in a unique Robust Design.</li>
+                    <li>It is built with durable, high-quality materials; the 1000 LPH RO Plant is engineered to withstand rigorous industrial environments and continuous operation.</li>
+                    <li>This plant uses Multi-Stage Filtration for purification.</li>
+                    <li>It is featuring a multi-stage filtration procedure including pre-filters, reverse osmosis membranes, and post-filters; it productively eliminates a wide range of contaminants, impurities, and dissolved solids.</li>
+                    <li>It has the High Production Capacity.</li>
+                    <li>The 1000 LPH (litres per hour) capacity makes sure a consistent and efficient supply of purified water, which matches with the requirements of different industrial procedure.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal20" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal20">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters20.png" alt="water-filters20" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Multiple purification by RO + UV + UF + TDS Control which removes even dissolved impurities such as chemicals, bacteria, viruses, and salts making water 100% pure and suitable for consumption. The in-tank UV LED keeps purified water pure for longer duration.</li>
+                    <li>Zero Water Wastage which ensures that no drop of water is wasted during the purification process. This is achieved by re-circulating the reject water to overhead tank using its own water pump.</li>
+                    <li>TDS control system allows adjustment of TDS level of purified water which retains essential natural minerals in drinking water.</li>
+                    <li>Country of Origin: India.</li>
+                    <li>Suitable for purification of brackish / tap water / municipal water supply. Capacity: 8 litres, high purification capacity of 20 litres per hour.</li>
+                    <li>Wall mounted design - best suited for domestic purpose. Compact Design which needs lesser space for installation.</li>
+                    <li>Fully automatic operation with auto-on and auto-off function, ensuring that you do not run out of pure water. Computer controlled operation for enhanced purity and long life of the product.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal21" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal21">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters21.png" alt="water-filters21" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Multiple purification by RO + UV + UF + TDS Control which removes even dissolved impurities such as chemicals, bacteria, viruses, and salts making water 100% pure and suitable for consumption. The in-tank UV LED keeps purified water pure for longer duration.</li>
+                    <li>Zero Water Wastage which ensures that no drop of water is wasted during the purification process. This is achieved by re-circulating the reject water to overhead tank using its own water pump.</li>
+                    <li>TDS control system allows adjustment of TDS level of purified water which retains essential natural minerals in drinking water.</li>
+                    <li>Country of Origin: India.</li>
+                    <li>Suitable for purification of brackish / tap water / municipal water supply. Capacity: 8 litres, high purification capacity of 20 litres per hour.</li>
+                    <li>Wall mounted design - best suited for domestic purpose. Compact Design which needs lesser space for installation.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal22" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal22">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters22.jpeg" alt="water-filters22" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Multiple purification by RO + UV + UF + TDS Control which removes even dissolved impurities such as chemicals, bacteria, viruses, and salts making water 100% pure and suitable for consumption. The in-tank UV LED keeps purified water pure for longer duration.</li>
+                    <li>Zero Water Wastage which ensures that no drop of water is wasted during the purification process. This is achieved by re-circulating the reject water to overhead tank using its own water pump.</li>
+                    <li>TDS control system allows adjustment of TDS level of purified water which retains essential natural minerals in drinking water.</li>
+                    <li>Country of Origin: India.</li>
+                    <li>Fully automatic operation with auto-on and auto-off function, ensuring that you do not run out of pure water. Computer controlled operation for enhanced purity and long life of the product.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal23" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal23">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters23.png" alt="water-filters23" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Multiple purification by RO + UV + UF + TDS Control which removes even dissolved impurities such as chemicals, bacteria, viruses, and salts making water 100% pure and suitable for consumption. The in-tank UV LED keeps purified water pure for longer duration.</li>
+                    <li>Zero Water Wastage which ensures that no drop of water is wasted during the purification process. This is achieved by re-circulating the reject water to overhead tank using its own water pump.</li>
+                    <li>TDS control system allows adjustment of TDS level of purified water which retains essential natural minerals in drinking water.</li>
+                    <li>Country of Origin: India.</li>
+                    <li>Suitable for purification of brackish / tap water / municipal water supply. Capacity: 8 litres, high purification capacity of 20 litres per hour.</li>
+                    <li>Wall mounted design - best suited for domestic purpose. Compact Design which needs lesser space for installation.</li>
+               </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal24" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal24">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters24.jpg" alt="water-filters24" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Fully automatic shut off function which automatically switched off the Machin when its water tanks get full || Purification Technology: RO; Type: Electrical; Purification Stage: Stage 1: 5 microns inline PP filter || Stage 2: Granule Active Carbon Filter ||Stage 3: Block Active Carbon Filter || Stage 4: RO Membrane ||Stage 5: Post UV Filtration</li>
+                <li>Best RO water purifier for Domestic and Commercial use with TDS Adjuster (that helps to adjust the taste of water as per the source)</li>
+                <li>Purification Capacity: 50 Liter Per Hour,2 pcs 150 Gpd Booster Pump, 4 pcs membrane</li>
+                <li>RO Water Purifier System Which runs upto 3000 TDS level of Input Water from Both Groundwater and Municipal Supply</li>
+                <li>Max. duty cycle per day: 400 To 500 Litre, Suitable for Office, Restaurant, Cafe, Resort and Factory</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal25" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal24">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters25.jpeg" alt="water-filters25" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Sensor-based touchless water dispensing</li>
+                <li>IP67 rated sensor protects against dust and water</li>
+                <li>Food grade stainless steel body and tank</li>
+                <li>Sturdy compressor for trouble-free operation</li>
+                <li>Rugged anti-corrosive plastic legs</li>
+                <li>Tropicalised for harsh Indian weather conditions</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal26" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal26">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters26.jpeg" alt="water-filters26" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Faster cooling</li>
+                <li>Eco-friendly</li>
+                <li>In situ power-saving PUF insulation</li>
+                <li>Sturdy compressor and trouble-free operation</li>
+                <li>Silent operation</li>
+                <li>Nationwide Blue Star network for prompt service</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal27" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal27">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters27.png" alt="water-filters27" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Warm and cold temperatures faucet</li>
+                <li>Sturdy compressor for durability</li>
+                <li>Instant warm water dispensing</li>
+                <li>Speedy drainage for easy cleaning
+                <li>Silent operations</li>
+                <li>Eco-friendly</li>
+                <li>Food grade SS (Stainless Steel) tank</li>
+                <li>Switch at back changes warm or cold water to normal.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal28" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal28">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters28.jpeg" alt="water-filters28" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Inbuilt UV purification</li>
+                <li>Multiple stages of filtration</li>
+                <li>Last-point purification</li>
+                <li>Electronic eye</li>
+                <li> Faster cooling</li>
+                <li>Lower power consumption</li>
+                <li>High throughput</li>
+                <li>Longer life</li>
+                <li>Contamination-free storage</li>
+                <li>Cold water even through power cuts</li>
+                <li>Space saving</li>
+                <li>Reliability</li>
+                <li>Ease of service</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal29" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal29">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters29.jpeg" alt="water-filters29" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Inbuilt RO purification</li>
+                <li>7 stages of filtration</li>
+                <li>Fully automatic</li>
+                <li> Faster cooling</li>
+                <li>Lower power consumption</li>
+                <li>High throughput</li>
+                <li>Longer life</li>
+                <li>Contamination-free storage</li>
+                <li>Cold water even through power cuts</li>
+                <li>Space saving</li>
+                <li>Reliability</li>
+                <li>Ease of service</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal30" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal30">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters30.jpg" alt="water-filters30" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Generic Spun Filter is made of fine melted polypropylene, which is blown and spun in a cylinder-like form. The main function of sediment filter is to remove large and fine particles from a drinking water, such as sand, dirt, silt, and rust particles.</li>
+                <li>Activated carbon filtration is one of many processes commonly used in water treatment to remove contaminants such as organic materials, and since it also can remove odor-causing contaminants, it's often used to make drinking water more palatable.</li>
+                <li>As the name suggests, a sediment filter acts as a barrier against different types of sediments or suspended solids. It sieves or holds back physical impurities like dust, dirt, sand, silt, clay, and other solid particles.</li>
+                <li>Reverse osmosis (RO) is a water purification process that uses a partially permeable membrane to separate ions, unwanted molecules and larger particles from drinking water. ... Applying an external pressure to reverse the natural flow of pure solvent, thus, is reverse osmosis.</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal31" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal31">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters31.webp" alt="water-filters31" class="product-image">
+            </div>
+            <div>	
+                <h4>Features</h4>
+            <ul>
+                <li>Model: ORG Automatic Shower Softener</li>
+                <li>Max. Flow Rate:	300 LPH</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15 - 0.6 Mpa</li>
+                <li>OBR: 375 Liter</li>
+                <li>Resin Quantity: 2 Liter</li>
+                <li>Salt Required For Regeneration: 400 G</li>
+                <li>Dimension (in mm): L 166 x W 167 x H 600</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal32" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal32">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters32.webp" alt="water-filters32" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: ORG Water Softener OS - 10A / 10C</li>
+                <li>Mode of Operation: Automatic / Manual</li>
+                <li>Max. Flow Rate:	500 LPH</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15 - 0.6 Mpa</li>
+                <li>OBR: 1500 Liter</li>
+                <li>Resin Quantity: 6 Liter</li>
+                <li>Salt Required For Regeneration: 900 G</li>
+                <li>Brine Tank: Inbuilt 8 Liter </li>
+                <li>Inlet/Outlet Size: 1/2"</li>
+                <li>Dimensions in mm: L280 X W260 X H1090</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal33" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal33">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters33.webp" alt="water-filters33" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: ORG Softener Mini</li>
+                <li>Max. Flow Rate:	800 LPH</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15 - 0.6 Mpa</li>
+                <li>OBR: 1900 Liter</li>
+                <li>Resin Quantity: 12.5 Liter</li>
+                <li>Salt Required For Regeneration: 2.8 KG</li>
+                <li>Brine Tank: Inbuilt </li>
+                <li>Dimension (in mm): L 525 x W 325 x H 615</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal34" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal34">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters34.webp" alt="water-filters34" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: 	Double Tank Shower Softener</li>
+                <li>Resin Volume: 	3.5 L</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Environment Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.1~0.6MPa</li>
+                <li>Input Voltage: AC100~240V/ 50~60Hz</li>
+                <li>Maximum Water Treatment capacity for each full salt adding: 5.5t</li>
+                <li>Inlet/Outlet: 1/2"</li>
+                <li>Salt Required For Regeneration: 4 KG</li>
+                <li>Applicable Water: Municipal Tap Water</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal35" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal35">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters35.webp" alt="water-filters35" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: ORG Automatic Water Softener OS - 20 AD</li>
+                <li>Max. Flow Rate:	1200 LPH</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15 - 0.6 Mpa</li>
+                <li>OBR: 1900 Liter</li>
+                <li>Resin Quantity: 12.5 Liter</li>
+                <li>Salt Required For Regeneration: 2.8 KG</li>
+                <li>Brine Tank: Inbuilt </li>
+                <li>Dimension (in mm): L 525 x W 325 x H 615</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal36" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal36">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters36.webp" alt="water-filters36" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: ORG Automatic Water Softener OS - 45 AD</li>
+                <li>Max. Flow Rate:	2000 LPH</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15 - 0.6 Mpa</li>
+                <li>OBR: 4300 Liter</li>
+                <li>Resin Quantity: 28 Liter</li>
+                <li>Salt Required For Regeneration: 6.5 KG</li>
+                <li>Brine Tank: Inbuilt </li>
+                <li>Dimension (in mm): L 525 x W 326 x H 1070</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal37" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal37">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters37.webp" alt="water-filters37" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: ORG Bungalow Softener C1044 BFT</li>
+                <li>Max. Flow Rate:	2000 LPH</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15 - 0.6 Mpa</li>
+                <li>OBR (Basis On 200ppm): 11500 Liter</li>
+                <li>Resin Quantity: 46 Liter</li>
+                <li>Salt Required For Regeneration: 7 KG</li>
+                <li>Brine Tank: Inbuilt with Brine Valve</li>
+                <li>Inlet/Outlet Size: 1"</li>
+                <li>Dimension (in mm): L 392 x W 484 x H 1300</li>                
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal38" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal38">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters38.webp" alt="water-filters38" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 500R</li>
+                <li>Vessels: FRP 2472, MS 700 x 2000</li>
+                <li>Flow in LPH: 17000 ~ 9000</li>
+                <li>MPV Model: 	63610B, 63610BBFT , 63610B-MS, 63610BBFT-MS</li>
+                <li>SV Size: 3/4"</li>
+                <li>Inlet Outlet Size: 2"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 106250 Liter</li>
+                <li>Resin Quantity:	425 Liter</li>
+                <li>Brine Tank:	500 Liter</li>
+                <li>Salt Required For Regeneration:	64 Kg</li>
+                <li>LP Required For BFT MPV: Danfos</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal39" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal39">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters39.webp" alt="water-filters39" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 700R</li>
+                <li>Vessels: FFRP 3072</li>
+                <li>Flow in LPH: 17000 ~ 9000</li>
+                <li>MPV Model: 	63610B / 63610BBFT</li>
+                <li>SV Size: 3/4"</li>
+                <li>Inlet Outlet Size: 2"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 168750 Liter</li>
+                <li>Resin Quantity:	675 Liter</li>
+                <li>Brine Tank:	1000 Liter</li>
+                <li>Salt Required For Regeneration:	102 Kg</li>
+                <li>LP Required For BFT MPV: Danfos</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal40" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal40">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters40.webp" alt="water-filters40" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 1000R</li>
+                <li>Vessels: FRP 3672, MS 1000 x 2000</li>
+                <li>Flow in LPH: 14000 LPH</li>
+                <li>MPV Model: 	63610B,63610BBFT,63610B-MS, 63610BBFT-MS, 63615,63615-MS, 63618, 63618-MS</li>
+                <li>SV Size: 3/4"</li>
+                <li>Inlet Outlet Size: 2"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 237500 Liter</li>
+                <li>Resin Quantity:	950 Liter</li>
+                <li>Brine Tank:	1000 Liter</li>
+                <li>Salt Required For Regeneration:	143 Kg</li>
+                <li>LP Required For BFT MPV: Danfos</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal41" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal41">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters41.webp" alt="water-filters41" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 1500R</li>
+                <li>Vessels: MS 1200 x 2000</li>
+                <li>Flow in LPH: 7000 ~ 9000</li>
+                <li>MPV Model: 63610B, 63610BBFT-MS, 63618-MS</li>
+                <li>SV Size: 3/4"</li>
+                <li>Inlet Outlet Size: 2"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 375000 Liter</li>
+                <li>Resin Quantity:	1500 Liter</li>
+                <li>Brine Tank:	2000 Liter</li>
+                <li>Salt Required For Regeneration:	225 Kg</li>
+                <li>LP Required For BFT MPV: Danfos</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal42" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal42">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters42.webp" alt="water-filters42" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 2000R</li>
+                <li>Vessels: FRP 4872, MS 1300 x 2000</li>
+                <li>Flow in LPH: 7000 ~ 9000</li>
+                <li>MPV Model: 	63610B, 63610BBFT, 63610B-MS, 63610BBFT-MS, 63615,63615-MS,63618, 63618-MS, 63620, 63620-MS</li>
+                <li>SV Size: 3/4"</li>
+                <li>Inlet Outlet Size: 2"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 425000 Liter</li>
+                <li>Resin Quantity:	1700 Liter</li>
+                <li>Brine Tank:	2000 Liter</li>
+                <li>Salt Required For Regeneration:	225 Kg</li>
+                <li>LP Required For BFT MPV: Danfos</li>
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal43" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal43">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters43.webp" alt="water-filters43" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Product Description: Salt for regeneration of ion exchange Resin</li>
+                <li>Purity:	99.80%</li>
+                <li>Tablet Size: F-24mm , H-13mm</li>
+                <li>Net Weight: 15 KG / 25 KG</li>                    
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal44" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal44">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters44.webp" alt="water-filters44" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 100R</li>
+                <li>Vessels: FRP 1354</li>
+                <li>Flow in LPH: 2000 ~ 3500</li>
+                <li>MPV Model: 	63604 /65605/63604 BFT</li>
+                <li>SV Size: 1/2"</li>
+                <li>Inlet Outlet Size: 1"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 20000 Liter</li>
+                <li>Resin Quantity:	80 Liter</li>
+                <li>Brine Tank:	100 Liter</li>
+                <li>Salt Required For Regeneration:	12 Kg</li>
+                <li>Skid/ Stand: SS Stand</li>
+                <li>LP Required For BFT MPV: Danfos</li>                
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal45" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal45">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters45.webp" alt="water-filters45" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 150R</li>
+                <li>Vessels: FRP 1465</li>
+                <li>Flow in LPH: 2000 ~ 3000</li>
+                <li>MPV Model: 	63604 / 63604BFT / 65605</li>
+                <li>SV Size: 1/2"</li>
+                <li>Inlet Outlet Size: 1"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 32500 Liter</li>
+                <li>Resin Quantity:	130 Liter</li>
+                <li>Brine Tank:	200 Liter</li>
+                <li>Salt Required For Regeneration:	20 Kg</li>
+                <li>Skid/ Stand: SS Stand</li>
+                <li>LP Required For BFT MPV: Danfos</li>             
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal46" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal46">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters46.webp" alt="water-filters46" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 200R</li>
+                <li>Vessels: FRP 1665</li>
+                <li>Flow in LPH: 2000 ~ 3500</li>
+                <li>MPV Model: 	63604, 63604BFT,65605,63610, 63610BFT</li>
+                <li>SV Size: 1/2"</li>
+                <li>Inlet Outlet Size: 1"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 43750 Liter</li>
+                <li>Resin Quantity:	175 Liter</li>
+                <li>Brine Tank:	200 Liter</li>
+                <li>Salt Required For Regeneration:	27 Kg</li>
+                <li>Skid/ Stand: SS Stand</li>
+                <li>LP Required For BFT MPV: Danfos</li>                
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal47" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal47">&times;</span>
+            <div class="modal-body">
+                <img src="/image/water-filters47.webp" alt="water-filters47" class="product-image">
+            </div>
+            <div>
+                <h4>Features</h4>
+            <ul>
+                <li>Model: Softener 300R</li>
+                <li>Vessels: FRP 2162</li>
+                <li>Flow in LPH: 7000 ~ 9000</li>
+                <li>MPV Model: 	63610B / 63610BBFT</li>
+                <li>SV Size: 3/4"</li>
+                <li>Inlet Outlet Size: 2"</li>
+                <li>Working Temperature: 5Â°C ~ 50Â°C</li>
+                <li>Working Pressure: 0.15-0.6 Mpa</li>
+                <li>OBR @200ppm: 68750 Liter</li>
+                <li>Resin Quantity:	275 Liter</li>
+                <li>Brine Tank:	350 Liter</li>
+                <li>Salt Required For Regeneration:	42 Kg</li>
+                <li>LP Required For BFT MPV: Danfos</li>                 
+            </ul>
+                <button class="buy-button">Enquire NOW</button>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">     
+        <div class="row">                       
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="single_footer">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="water-filters.html">Water Filters</a></li>
+                        <li><a href="cctv-fire-safety.html">CCTV</a></li>
+                        <li><a href="rent-agreement.html">Rent Agreement</a></li>
+                        <li><a href="star-health-insurance.html">Health Insurance</a></li>
+                        <li><a href="vehicle-insurance.html">Vehicle Insurance</a></li>
+                        <li><a href="real-estate.html">Real Estate</a></li>
+
+                    </ul>
+                </div>
+            </div><!--- END COL --> 
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="single_footer single_footer_address">
+                    <h4>Page Link</h4>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact-Us</a></li>
+                      <li><a href="testimonials.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Subscribe today</h4>
+                        <div class="signup_form">                           
+                            <form action="#" class="subscribe">
+                                <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                                <button type="button" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social_profile">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>                          
+                </div><!--- END COL -->         
+            </div><!--- END ROW --><br><hr>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <p class="copyright">Copyright © 2024 Royal Agencies | Powered by <a href="https://imperiumofficial.vercel.app/">IMPERIUM</a></p>
+                    <p></p>
+                </div><!--- END COL -->                 
+            </div><!--- END ROW -->                 
+        </div><!--- END CONTAINER -->
+    </div>
+   
+    <script src="/js/water-filters.js"></script>
+
+</body>
+</html>
